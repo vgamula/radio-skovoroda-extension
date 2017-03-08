@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Radio Skovoroda Utils",
+  "description": "This extension adds some utils to the Radio Skovoroda site.",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "http://radioskovoroda.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://radioskovoroda.com/*"],
+      "js": ["inject.js"],
+      "all_frames": true
+    }
+  ],
+   "web_accessible_resources": [
+    "content.js"
+  ]
+}

@@ -16,7 +16,7 @@
             } else {
                 return;
             }
-            document.title = currentTrack.artist + ' ' + currentTrack.track;
+            document.title = currentTrack.artist + ' - ' + currentTrack.track;
         }
         setInterval(checkPlaying, 1000);
     }, 3000);
